@@ -1,0 +1,10 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+          - name: remove mysql server
+            apt:
+                    name: mysql-server
+                    state: absent
